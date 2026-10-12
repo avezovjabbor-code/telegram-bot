@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O'zbekiston Qurolli Kuchlari & Harbiy Axborot Portali</title>
+  <meta name="description" content="Harbiylar, O'zbekiston Qurolli Kuchlari faoliyati, qo'shin turlari, harbiy unvonlar va pogonlar, zamonaviy texnikalar hamda harbiy xizmat haqida to'liq axborot portali.">
+  <meta name="keywords" content="harbiylar, qurolli kuchlar, harbiy xizmat, pogonlar, unvonlar, harbiy texnika, mudofaa vazirligi">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Tactical Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tactical HUD Scanline -->
+  <div class="hud-scanline-overlay"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#hero" class="brand-logo">
+          <div class="logo-badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v4.7c0 4.54-3.13 8.79-7 9.88-3.87-1.09-7-5.34-7-9.88V6.3l7-3.12zm0 3.82a3 3 0 0 0-3 3c0 1.31.84 2.42 2 2.83V16h2v-3.17c1.16-.41 2-1.52 2-2.83a3 3 0 0 0-3-3z"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">VATAN HIMOYASI</span>
+            <span class="brand-sub">Qurolli Kuchlar Portali</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Bosh sahifa</a></li>
+          <li><a href="#branches" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Qo'shin turlari</a></li>
+          <li><a href="#ranks" class="nav-link"><i class="fa-solid fa-star"></i> Unvonlar</a></li>
+          <li><a href="#hardware" class="nav-link"><i class="fa-solid fa-jet-fighter"></i> Texnikalar</a></li>
+          <li><a href="#history" class="nav-link"><i class="fa-solid fa-landmark"></i> Sarkardalar</a></li>
+          <li><a href="#quiz" class="nav-link"><i class="fa-solid fa-bullseye"></i> Test</a></li>
+          <li><a href="#fitness" class="nav-link"><i class="fa-solid fa-dumbbell"></i> Normativlar</a></li>
+          <li><a href="#academies" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Harbiy ta'lim</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-audio-toggle" id="audioToggleBtn" title="Taktik ovoz effektlarini yoqish/o'chirish">
+            <i class="fa-solid fa-volume-xmark"></i>
+            <span>Ovoz: O'CHIK</span>
+          </button>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menyu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section & Tactical HUD -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="pulse-dot"></span>
+            <span>O'zbekiston Respublikasi Qurolli Kuchlari</span>
+          </div>
+          <h1 class="hero-title">
+            Vatan Himoyasi — 
+            <span class="highlight-gold">Muqaddas Burch</span>
+            <span class="highlight-green">& Oliy Sharaf!</span>
+          </h1>
+          <p class="hero-desc">
+            Milliy armiyamiz — yurt tinchligi, chegaralarimiz daxlsizligi va osoyishta osmonimizning mustahkam qalqonidir. O'zbekiston Qurolli Kuchlari faoliyati, qo'shin turlari, harbiy unvonlar va zamonaviy mudofaa texnologiyalari bilan tanishing.
+          </p>
+          <div class="hero-buttons">
+            <a href="#branches" class="btn-tactical btn-primary-tactical">
+              <i class="fa-solid fa-compass"></i>
+              <span>Qo'shinlar bilan tanishish</span>
+            </a>
+            <a href="#quiz" class="btn-tactical btn-outline-tactical">
+              <i class="fa-solid fa-crosshairs"></i>
+              <span>Harbiy testdan o'tish</span>
+            </a>
+          </div>
+
+          <!-- Hero Stats Bar -->
+          <div class="hero-stats-bar">
+            <div class="stat-card">
+              <div class="stat-number">14-YAN</div>
+              <div class="stat-label">Vatan Himoyachilari Kuni</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5 TA</div>
+              <div class="stat-label">Harbiy Okruglar</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Jangovar Shaylik</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">TOP-1</div>
+              <div class="stat-label">Mintaqadagi Quvvat</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Radar & Telemetry HUD -->
+        <div class="hero-radar-side">
+          <div class="radar-wrapper">
+            <div class="hud-header">
+              <span><i class="fa-solid fa-satellite-dish"></i> RADAR TIZIMI : AKTIV</span>
+              <span>SEKTOR: HAVO VA SARHAD</span>
+            </div>
+            <div class="radar-canvas-container">
+              <canvas id="radarCanvas"></canvas>
+            </div>
+            <div class="radar-telemetry">
+              <div class="telemetry-item">
+                <span>Holat:</span>
+                <span style="color: var(--accent-neon-green);">BARQAROR</span>
+              </div>
+              <div class="telemetry-item">
+                <span>Nazorat:</span>
+                <span>360° SKANER</span>
+              </div>
+              <div class="telemetry-item">
+                <span>Koordinata:</span>
+                <span>41.2995° N, 69.2401° E</span>
+              </div>
+              <div class="telemetry-item">
+                <span>Signallar:</span>
+                <span style="color: var(--accent-gold);">HIMOYALANGAN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Live Search & Filter Bar -->
+  <div class="container" style="margin-top: 20px;">
+    <div class="filter-search-container">
+      <div class="search-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="tacticalSearchInput" class="tactical-search-input" placeholder="Qo'shin turi, unvon yoki texnika nomini qidiring (masalan: Tank, Dron, Kapitan, Desant)...">
+      </div>
+    </div>
+  </div>
+
+  <!-- Qo'shin Turlari (Branches) -->
+  <section class="section" id="branches">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Tarkibiy Tuzilma</span>
+        <h2 class="section-title">Qurolli Kuchlar Qo'shin Turlari</h2>
+        <p class="section-desc">
+          Har bir qo'shin turi mamlakatimiz mudofaa qudratining ajralmas bo'lagi bo'lib, o'zining maxsus taktik vazifalariga ega.
+        </p>
+      </div>
+
+      <div class="branches-grid" id="branchesGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Harbiy Unvonlar va Pogonlar (Ranks) -->
+  <section class="section section-alt" id="ranks">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Harbiy Ierarxiya</span>
+        <h2 class="section-title">Harbiy Unvonlar va Pogonlar</h2>
+        <p class="section-desc">
+          O'zbekiston Respublikasi Qurolli Kuchlaridagi rasmiy harbiy unvonlar, pogon belgilarining ko'rinishi va ularning tavsifi.
+        </p>
+      </div>
+
+      <!-- Ranks Category Nav -->
+      <div class="ranks-tabs-nav">
+        <button class="rank-tab-btn active" data-cat="enlisted">
+          <i class="fa-solid fa-user-shield"></i> Askarlar va Serjantlar
+        </button>
+        <button class="rank-tab-btn" data-cat="junior-officer">
+          <i class="fa-solid fa-star-half-stroke"></i> Kichik Ofitserlar
+        </button>
+        <button class="rank-tab-btn" data-cat="senior-officer">
+          <i class="fa-solid fa-star"></i> Katta Ofitserlar
+        </button>
+        <button class="rank-tab-btn" data-cat="generals">
+          <i class="fa-solid fa-award"></i> Oliy Ofitserlar (Generallar)
+        </button>
+      </div>
+
+      <div class="ranks-grid" id="ranksGrid">
+        <!-- Rendered dynamically by app.js with SVG Pogon insignias -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Zamonaviy Harbiy Texnikalar (Hardware & Weapons) -->
+  <section class="section" id="hardware">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Jangovar Qurol-Yarog'lar</span>
+        <h2 class="section-title">Zamonaviy Harbiy Texnikalar</h2>
+        <p class="section-desc">
+          Qurolli Kuchlarimiz safidagi eng yangi avlod zirhli texnikalari, uchuvchisiz uchish apparatlari va yuqori aniqlikdagi qurollar.
+        </p>
+      </div>
+
+      <!-- Hardware Filters -->
+      <div class="filter-search-container" style="justify-content: center; margin-bottom: 40px;">
+        <div class="filter-btn-group">
+          <button class="filter-btn hardware-filter-btn active" data-type="all">Barchasi</button>
+          <button class="filter-btn hardware-filter-btn" data-type="armor">Zirhli Texnika</button>
+          <button class="filter-btn hardware-filter-btn" data-type="air">Aviatsiya & Dronlar</button>
+          <button class="filter-btn hardware-filter-btn" data-type="missile">Raketa & HHM</button>
+          <button class="filter-btn hardware-filter-btn" data-type="firearm">O'qotar Qurollar</button>
+        </div>
+      </div>
+
+      <div class="hardware-grid" id="hardwareGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarixiy Sarkardalar (Historical Commanders) -->
+  <section class="section section-alt" id="history">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Mardlik Va Jasorat Maktabi</span>
+        <h2 class="section-title">Buyuk Sarkardalarimiz</h2>
+        <p class="section-desc">
+          Ota-bobolarimizning boy jang san'ati va vatanparvarlik merosi bugungi harbiy an'analarimizning mustahkam poydevoridir.
+        </p>
+      </div>
+
+      <div class="history-timeline" id="historyTimeline">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interaktiv Harbiy Test (Military Quiz) -->
+  <section class="section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Interaktiv Sinov</span>
+        <h2 class="section-title">Qaysi Qo'shin Turiga Mos Kelasiz?</h2>
+        <p class="section-desc">
+          5 ta maxsus taktik-psixologik savolga javob bering va qaysi harbiy yo'nalish sizning xarakteringizga ko'proq to'g'ri kelishini aniqlang!
+        </p>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgressFill"></div>
+        </div>
+
+        <!-- Question View -->
+        <div id="quizQuestionView">
+          <div class="quiz-meta">
+            <span id="quizMetaNumber">SAVOL 01 / 05</span>
+            <span><i class="fa-solid fa-clock"></i> CHEKLANMAGAN</span>
+          </div>
+          <h3 class="quiz-question-title" id="quizQuestionTitle">Savol matni yuklanmoqda...</h3>
+          <div class="quiz-options-list" id="quizOptionsList">
+            <!-- Options dynamically loaded -->
+          </div>
+        </div>
+
+        <!-- Result View -->
+        <div id="quizResultView" class="quiz-result-view">
+          <div class="badge-result-icon" id="resultBadgeIcon">
+            <i class="fa-solid fa-shield"></i>
+          </div>
+          <h3 class="result-badge-title" id="resultBadgeTitle">Sizning Natijangiz</h3>
+          <p class="result-badge-desc" id="resultBadgeDesc">Tavsif yuklanmoqda...</p>
+          <button class="btn-tactical btn-primary-tactical" onclick="restartQuiz()">
+            <i class="fa-solid fa-rotate-right"></i>
+            <span>Testni qaytadan topshirish</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jismoniy Normativlar Kalkulyatori (Fitness Calculator) -->
+  <section class="section section-alt" id="fitness">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Jismoniy Tayyorgarlik</span>
+        <h2 class="section-title">Harbiy Normativlar Hisoblagichi</h2>
+        <p class="section-desc">
+          O'z natijalaringizni kiriting va Qurolli Kuchlar jismoniy tayyorgarlik talablari bo'yicha toifangizni tekshiring.
+        </p>
+      </div>
+
+      <div class="calc-wrapper">
+        <div class="calc-form-card">
+          <div class="calc-field-group">
+            <label class="calc-label" for="calcPullups">
+              Turnikda tortilish:
+              <small>(Standart: 12-15 marta)</small>
+            </label>
+            <div class="calc-input-row">
+              <input type="number" id="calcPullups" class="calc-input" value="12" min="0" max="50">
+              <span class="calc-unit">marta</span>
+            </div>
+          </div>
+
+          <div class="calc-field-group">
+            <label class="calc-label" for="calcSprint">
+              100 metrga yugurish tezligi:
+              <small>(Standart: 13.0 - 14.0 soniya)</small>
+            </label>
+            <div class="calc-input-row">
+              <input type="number" id="calcSprint" class="calc-input" value="13.5" step="0.1" min="9" max="30">
+              <span class="calc-unit">soniya</span>
+            </div>
+          </div>
+
+          <div class="calc-field-group">
+            <label class="calc-label" for="calcRun">
+              3000 metr kross yugurish:
+              <small>(Standart: 12.0 - 13.0 daqiqa)</small>
+            </label>
+            <div class="calc-input-row">
+              <input type="number" id="calcRun" class="calc-input" value="12.3" step="0.1" min="8" max="30">
+              <span class="calc-unit">daqiqa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-score-card">
+          <div class="score-circle">
+            <span class="score-value" id="calcScoreValue">85</span>
+            <span class="score-max">/ 100 ball</span>
+          </div>
+          <div class="score-grade-badge grade-excellent" id="calcGradeBadge">A'LO DARAJA (1-TOIFA)</div>
+          <p class="score-evaluation" id="calcEvalDesc">
+            Siz harbiy xizmat va maxsus bo'linmalar uchun to'liq mos yuksak jismoniy tayyorgarlikka egasiz!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Harbiy Oliy Ta'lim Muassasalari (Academies) -->
+  <section class="section" id="academies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Ofitserlar Tayyorlash</span>
+        <h2 class="section-title">Oliy Harbiy Bilim Yurtlari</h2>
+        <p class="section-desc">
+          Kelajak ofitserlari va qo'mondonlarini tayyorlovchi O'zbekiston Respublikasining yetakchi harbiy institut va akademiyalari.
+        </p>
+      </div>
+
+      <div class="academies-grid">
+        <div class="academy-card">
+          <span class="academy-location"><i class="fa-solid fa-location-dot"></i> Toshkent shahri</span>
+          <h3 class="academy-name">O'zbekiston Respublikasi Qurolli Kuchlari Akademiyasi</h3>
+          <p class="academy-desc">
+            Harbiy sohadagi eng oliy ta'lim muassasasi. Qo'shinlarni boshqarish bo'yicha yuqori malakali komandir va shtab ofitserlarini yetishtiradi.
+          </p>
+          <div class="academy-requirements">
+            <h5><i class="fa-solid fa-file-signature"></i> Qabul talablari:</h5>
+            <p>Tibbiy ko'rik, psixofiziologik saralash, jismoniy sinov va umumta'lim fanlari bo'yicha DTM testlari.</p>
+          </div>
+        </div>
+
+        <div class="academy-card">
+          <span class="academy-location"><i class="fa-solid fa-location-dot"></i> Toshkent viloyati, Chirchiq</span>
+          <h3 class="academy-name">Chirchiq Oliy Tank Qo'mondonlik-Muhandislik Bilim Yurti</h3>
+          <p class="academy-desc">
+            Zirhli tank, motouqchi, havo-desant va artilleriya bo'linmalari uchun mohir taktik komandirlar hamda muhandislarni tayyorlaydi.
+          </p>
+          <div class="academy-requirements">
+            <h5><i class="fa-solid fa-file-signature"></i> Mutaxassisliklar:</h5>
+            <p>Tank qo'shinlari qo'mondonlik-taktikasi, desantchi va tog'-o'qchi bo'linmalari taktikasi.</p>
+          </div>
+        </div>
+
+        <div class="academy-card">
+          <span class="academy-location"><i class="fa-solid fa-location-dot"></i> Qashqadaryo, Qarshi shahri</span>
+          <h3 class="academy-name">O'zbekiston Respublikasi Harbiy Aviatsiya Instituti</h3>
+          <p class="academy-desc">
+            Harbiy aviatsiya uchuvchilari, shturmanlar, uchuvchisiz uchish apparatlari operatorlari va aviatsiya muhandislarini tayyorlovchi markaz.
+          </p>
+          <div class="academy-requirements">
+            <h5><i class="fa-solid fa-file-signature"></i> Alohida talab:</h5>
+            <p>1-toifali qat'iy uchuvchilik tibbiy komissiyasi va vestibullyar tekshiruvdan o'tish.</p>
+          </div>
+        </div>
+
+        <div class="academy-card">
+          <span class="academy-location"><i class="fa-solid fa-location-dot"></i> Toshkent shahri</span>
+          <h3 class="academy-name">AKT va Aloqa Harbiy Instituti</h3>
+          <p class="academy-desc">
+            Zamonaviy harbiy kiberxavfsizlik, raqamli axborot xavfsizligi, maxfiy shifrlash va radiolokatsiya mutaxassislarini tayyorlaydi.
+          </p>
+          <div class="academy-requirements">
+            <h5><i class="fa-solid fa-file-signature"></i> Asosiy fanlar:</h5>
+            <p>Matematika, informatika, fizika va chet tillari bo'yicha yuqori bilimlar talab etiladi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tactical Universal Modal -->
+  <div class="tactical-modal-backdrop" id="tacticalModal">
+    <div class="tactical-modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Ma'lumot</h3>
+        <button class="modal-close-btn" onclick="closeTacticalModal()" aria-label="Yopish">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-badge">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">VATAN HIMOYASI</span>
+              <span class="brand-sub">Qurolli Kuchlar Portali</span>
+            </div>
+          </div>
+          <p>
+            O'zbekiston Respublikasi Qurolli Kuchlari haqida yoshlar va keng jamoatchilik uchun mo'ljallangan zamonaviy, interaktiv axborot portali.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Tezkor Havolalar</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Bosh sahifa</a></li>
+            <li><a href="#branches">Qo'shin turlari</a></li>
+            <li><a href="#ranks">Harbiy unvonlar</a></li>
+            <li><a href="#hardware">Harbiy texnikalar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Interaktiv Bo'limlar</h4>
+          <ul class="footer-links">
+            <li><a href="#quiz">Harbiy test</a></li>
+            <li><a href="#fitness">Normativlar kalkulyatori</a></li>
+            <li><a href="#history">Tarixiy sarkardalar</a></li>
+            <li><a href="#academies">Harbiy bilim yurtlari</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-quote-box">
+            <p>"Vatan himoyasi — har bir fuqaroning muqaddas burchi va faxriy vazifasidir."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© O'zbekiston Qurolli Kuchlari Axborot Portali. Barcha huquqlar himoyalangan.</span>
+        <span>Tinchlik — oliy ne'mat!</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
